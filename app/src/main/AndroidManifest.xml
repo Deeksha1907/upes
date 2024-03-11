@@ -29,6 +29,10 @@
             android:name=".presentation.screens.authentication.login.Login"
             android:exported="true"
             android:theme="@style/Theme.Upes" />
+        <activity
+            android:name=".presentation.screens.authentication.address_screen"
+            android:exported="true"
+            android:theme="@style/Theme.Upes" />
     </application>
 
 </manifest>
