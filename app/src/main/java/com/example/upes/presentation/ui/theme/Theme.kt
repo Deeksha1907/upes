@@ -1,4 +1,4 @@
-package com.example.upes.ui.theme
+package com.example.upes.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
