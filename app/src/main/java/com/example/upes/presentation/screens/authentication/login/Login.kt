@@ -1,7 +1,6 @@
 package com.example.upes.presentation.screens.authentication.login
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.upes.R
 import com.example.upes.databinding.LoginBinding
 
 class Login : AppCompatActivity() {
