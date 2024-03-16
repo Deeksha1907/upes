@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".CyberStrikeApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,11 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Upes"
         tools:targetApi="31">
-
         <activity
-            android:name=".presentation.screens.authentication.signup.signup"
-            android:exported="true"
-            android:theme="@style/Theme.Upes">
+            android:name=".presentation.screens.user.User"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,11 +26,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presentation.screens.authentication.login.Login"
+            android:name=".presentation.screens.authentication.signup.signup"
             android:exported="true"
-            android:theme="@style/Theme.Upes" />
+            android:theme="@style/Theme.Upes">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <activity
-            android:name=".presentation.screens.authentication.address_screen"
+            android:name=".presentation.screens.authentication.login.Login"
             android:exported="true"
             android:theme="@style/Theme.Upes" />
     </application>

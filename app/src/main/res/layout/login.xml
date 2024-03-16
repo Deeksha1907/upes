@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="@string/remember_me"
-            android:textColor="@color/semiblack"
+            android:textColor="@color/darkgray"
             android:fontFamily="@font/montserrat_medium"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -184,7 +184,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:text="@string/or_login_with"
                 android:fontFamily="@font/montserrat_regular"
-                android:textColor="@color/semiblack"
+                android:textColor="@color/darkgray"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -252,7 +252,7 @@
                 android:text="@string/don_t_have_an_account"
                 android:textAlignment="viewEnd"
                 android:fontFamily="@font/montserrat_medium"
-                android:textColor="@color/semiblack"
+                android:textColor="@color/darkgray"
                 android:textSize="15.75sp" />
 
             <TextView

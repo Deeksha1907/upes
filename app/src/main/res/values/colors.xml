@@ -9,9 +9,22 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#C1C8E3</color>
     <color name="darkgrey">#A8AAB4</color>
-    <color name="semiblack">#2E2C2C</color>
+    <color name="darkgray">#2E2C2C</color>
     <color name="lightorange">#FF8080</color>
     <color name="bgcolor">#FFF3EA</color>
-    <color name="primary">#2CB67D</color>
+    <color name="primary">#FF6F61</color>
+    <color name="onprimary">#ffffff</color>
+    <color name="onPrimaryVariant">#cccccc</color>
+    <color name="onPrimarySecondVariant">#F9E2CF</color>
+    <color name="secondary">#1ff1c8</color>
+    <color name="onsecondary">#f9e2cf</color>
     <color name="blue">#054590</color>
+    <color name="graytxt">#7d7d7d</color>
+    <color name="background">#1e1e1e</color>
+    <color name="graybackground">#272727</color>
+    <color name="tertiary">#FFE76C</color>
+    <color name="ontertiary">#000000</color>
+    <color name="outline">#7E7D7D</color>
+
+
 </resources>
