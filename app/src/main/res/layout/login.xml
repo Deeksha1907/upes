@@ -157,7 +157,7 @@
             android:text="@string/login"
             app:cornerRadius="8dp"
             android:textColor="@color/white"
-           android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/montserrat_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
