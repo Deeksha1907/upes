@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TextInputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <style name="Theme.App" parent="Theme.Upes">
+        <item name="colorOnSurface">@color/primary</item>
+        <item name="colorPrimary">@color/primary_txt</item>
     </style>
 </resources>
