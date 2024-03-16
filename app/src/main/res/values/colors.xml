@@ -25,6 +25,7 @@
     <color name="tertiary">#FFE76C</color>
     <color name="ontertiary">#000000</color>
     <color name="outline">#7E7D7D</color>
-
-
+    <color name="semiblack">#363941</color>
+    <color name="hint">#F9E2CF</color>
+    <color name="view">#FDE6D1</color>
 </resources>

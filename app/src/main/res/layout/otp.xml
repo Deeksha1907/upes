@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:scrollbars="none"
+    tools:context=".presentation.screens.authentication.signup.signup">
+
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/create_accounts"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/gamify_your_cyber_defense_journey"
+        android:textColor="@color/onprimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_account" />
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_view"
+            app:layout_constraintEnd_toStartOf="@id/view2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_view_main"
+            app:layout_constraintEnd_toStartOf="@id/view3"
+            app:layout_constraintStart_toEndOf="@id/view1" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_view"
+            app:layout_constraintStart_toEndOf="@id/view2" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/otp_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/otp_verification"
+        android:textColor="@color/primary"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Enter the verification code we just sent to your number +919 *******58."
+        android:textColor="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_verify" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no1_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toStartOf="@id/no2_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:nextFocusDown="@id/no2_container"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no2_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toStartOf="@id/no3_container"
+        app:layout_constraintStart_toEndOf="@id/no1_container"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:nextFocusForward="@id/no3_container"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no3_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toStartOf="@id/no4_container"
+        app:layout_constraintStart_toEndOf="@id/no2_container"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/no3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:nextFocusForward="@id/no4_container"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no4_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toStartOf="@id/no5_container"
+        app:layout_constraintStart_toEndOf="@id/no3_container"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/no4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:nextFocusForward="@id/no5_container"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no5_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toStartOf="@id/no6_container"
+        app:layout_constraintStart_toEndOf="@id/no4_container"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/no5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:nextFocusForward="@id/no6_container"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no6_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/no5_container"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/no6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_btn"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
