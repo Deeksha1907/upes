@@ -60,18 +60,25 @@
         <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_3"
             android:exported="true"
             android:theme="@style/Theme.Upes">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
+        <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_4"
+            android:exported="true"
+            android:theme="@style/Theme.Upes"/>
 
         <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_1"
             android:exported="true"
-            android:theme="@style/Theme.Upes">
+            android:theme="@style/Theme.Upes"/>
+            <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_5"
+                android:exported="true"
+                android:theme="@style/Theme.Upes">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
 
-        </activity>
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
     </application>
 
 </manifest>
