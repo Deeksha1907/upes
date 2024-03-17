@@ -44,7 +44,6 @@
     <string name="type_of_location">Type of Location</string>
     <string name="work_home">Work/Home</string>
     <string name="let_s_go">Let\'s Go</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_the_language">Select the language</string>
     <string name="select_language">Select Language</string>
     <string name="english">English</string>
@@ -59,4 +58,18 @@
     <string name="gender">Gender</string>
     <string name="enter_your_name">Enter your name</string>
     <string name="otp_verification">OTP Verification</string>
+    <string name="didn_t_receive_code_resend">Didn’t receive code? Resend</string>
+    <string name="resend">Resend</string>
+    <string name="didn_t_receive_code">Didn’t receive code?</string>
+    <string name="what_is_your_level">What is your level ?</string>
+    <string name="choose_from_the_list_below">Choose from the list below</string>
+    <string name="do_you_have_any_prior_knowledge">Do you have any prior knowledge ?</string>
+    <string name="yes_i_have_prior_knowledge">Yes , I have Prior Knowledge</string>
+    <string name="no_i_am_a_absolute_beginner">No , I am a absolute beginner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_skills_do_you_have">What Skills do you have ?</string>
+    <string name="phishing">Phishing</string>
+    <string name="social_engineering">Social Engineering</string>
+    <string name="malware">Malware</string>
 </resources>

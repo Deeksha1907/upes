@@ -13,12 +13,13 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class NetworkModule {
 companion object{
-    const val BASE_URL="https://sharesphere-backend.onrender.com/api/v1/"
+    const val BASE_URL="http://mvprv599-8000.inc1.devtunnels.ms/"
 }
+
 
     @Singleton
     @Provides
-     fun providesRetrofit(): Retrofit {
+    fun providesRetrofit(): Retrofit {
         return Retrofit.Builder().baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create()).build()
     }

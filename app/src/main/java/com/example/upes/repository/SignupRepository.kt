@@ -32,24 +32,24 @@ class SignupRepository @Inject constructor(private val cyberStrikeApi: CyberStri
 //            Timber.d("server error")
 //        }
 //    }.flowOn(Dispatchers.IO)
-//        try {
-//            emit(ApiResponse.Loading())
-//            Timber.d(signupRequestModel.toString())
-//            val response = cyberStrikeApi.register()
-//            if (response.isSuccessful) {
-//                emit(ApiResponse.Success(response.body()!!))
-//                Timber.d(response.body().toString())
-//            } else {
-//                val error = response.errorBody()?.string() ?: ""
-//                val parsedError = Gson().fromJson(error, ServerErrorDto::class.java)
-//                val errorMessage = parsedError?.errors?.message ?: ""
-//                emit(ApiResponse.Error(errorMessage))
-//                Timber.d(errorMessage.toString())
-//            }
-//        } catch (e: Exception) {
-//            emit(ApiResponse.Error("Internal Server Error"))
-//            Timber.d("server error")
-//        }
+        try {
+            emit(ApiResponse.Loading())
+            Timber.d(signupRequestModel.toString())
+            val response = cyberStrikeApi.register(signupRequestModel)
+            if (response.isSuccessful) {
+                emit(ApiResponse.Success(response.body()!!))
+                Timber.d(response.body().toString())
+            } else {
+                val error = response.errorBody()?.string() ?: ""
+                val parsedError = Gson().fromJson(error, ServerErrorDto::class.java)
+                val errorMessage = parsedError?.errors?.message ?: ""
+                emit(ApiResponse.Error(errorMessage))
+                Timber.d(errorMessage.toString())
+            }
+        } catch (e: Exception) {
+            emit(ApiResponse.Error("Internal Server Error"))
+            Timber.d("server error")
+        }
 
 
     }

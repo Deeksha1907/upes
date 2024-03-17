@@ -1,13 +1,12 @@
 package com.example.upes.presentation.screens.authentication.signup
 
+import PreferencesKeys
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.upes.api.ApiResponse
+import com.example.sharesphere.domain.repository.DataStoreRepositoryInterface
 import com.example.upes.databinding.SignupBinding
-import com.example.upes.model.SignupRequestModel
 import com.example.upes.presentation.screens.authentication.Otp
 import com.example.upes.repository.SignupRepository
 import dagger.hilt.android.AndroidEntryPoint
@@ -19,6 +18,10 @@ class Signup : AppCompatActivity() {
 
     @Inject
     lateinit var signupRepository: SignupRepository
+
+    @Inject
+    lateinit var dataStoreRepositoryInterface: DataStoreRepositoryInterface
+
     lateinit var binding: SignupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,17 +50,24 @@ class Signup : AppCompatActivity() {
                 if (password != password2) {
                     binding.confirmPassword.error = "Password does not match"
                 } else {
-                    val signupReq = SignupRequestModel(
-                        age.toInt(),
-                        email,
-                        fullName,
-                        gender,
-                        mobileNumber,
-                        password,
-                        password2
-                    )
+//                    val signupReq = SignupRequestModel(
+//                        age.toInt(),
+//                        email,
+//                        fullName,
+//                        gender,
+//                        mobileNumber,
+//                        password,
+//                        password2
+//                    )
                     lifecycleScope.launch {
-                        signup(signupReq)
+                        dataStoreRepositoryInterface.save(PreferencesKeys.Email, email)
+                        dataStoreRepositoryInterface.save(PreferencesKeys.FullName, fullName)
+                        dataStoreRepositoryInterface.save(PreferencesKeys.Mobile, mobileNumber)
+                        dataStoreRepositoryInterface.save(PreferencesKeys.Age, age)
+                        dataStoreRepositoryInterface.save(PreferencesKeys.Gender, gender)
+                        val intent = Intent(this@Signup, Otp::class.java)
+                        startActivity(intent)
+//                        signup(signupReq)
                     }
                 }
             }
@@ -65,24 +75,24 @@ class Signup : AppCompatActivity() {
 
     }
 
-    private suspend fun signup(signupReq: SignupRequestModel) {
-        signupRepository.signup(signupReq).collect { result ->
-            when (result) {
-                is ApiResponse.Success -> {
-
-                    val intent = Intent(this, Otp::class.java)
-                    startActivity(intent)
-                }
-
-                is ApiResponse.Error -> {
-                    Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show()
-                }
-
-                is ApiResponse.Loading -> {
-                    //show loading
-                }
-            }
-        }
-    }
+//    private suspend fun signup(signupReq: SignupRequestModel) {
+//        signupRepository.signup(signupReq).collect { result ->
+//            when (result) {
+//                is ApiResponse.Success -> {
+//
+//                    val intent = Intent(this, Otp::class.java)
+//                    startActivity(intent)
+//                }
+//
+//                is ApiResponse.Error -> {
+//                    Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show()
+//                }
+//
+//                is ApiResponse.Loading -> {
+//                    //show loading
+//                }
+//            }
+//        }
+//    }
 
 }

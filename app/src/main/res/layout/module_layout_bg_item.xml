@@ -6,18 +6,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/level_title"
+        android:id="@+id/module_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Level - "
+        android:text="Module - "
         android:textColor="@color/onprimary"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-        android:id="@+id/level"
+        android:id="@+id/module"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -25,13 +25,13 @@
         android:text="1"
         android:textColor="@color/onprimary"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@id/level_title"
+        app:layout_constraintStart_toEndOf="@id/module_title"
         app:layout_constraintTop_toTopOf="parent"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="328dp"
         android:id="@+id/bg"
-        app:layout_constraintTop_toBottomOf="@id/level_title"
+        app:layout_constraintTop_toBottomOf="@id/module_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/module_bg"/>
@@ -42,7 +42,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/secondaryvariant"
         android:paddingEnd="16dp"
-        android:id="@+id/module1"
+        android:id="@+id/level1"
         android:layout_marginTop="8dp"
         app:cardCornerRadius="24dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,12 +58,12 @@
             android:paddingEnd="32dp">
 
             <TextView
-                android:id="@+id/module_no"
+                android:id="@+id/level_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="Module - 1"
+                android:text="level - 1"
                 android:textColor="@color/ontertiary"
                 android:textSize="10sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/Module_name"
+                android:id="@+id/level_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -83,13 +83,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/module_no" />
+                app:layout_constraintTop_toBottomOf="@id/level_no" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/module2"
+        android:id="@+id/level2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -97,7 +97,7 @@
         app:cardCornerRadius="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/module1">
+        app:layout_constraintTop_toBottomOf="@id/level1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
             android:paddingEnd="32dp">
 
             <ImageView
-                android:id="@+id/lock_icon_module2"
+                android:id="@+id/lock_icon_level2"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/baseline_lock_24"
@@ -124,10 +124,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="Module 2"
+                android:text="Level 2"
                 android:textColor="@color/onprimary"
                 android:textSize="10sp"
-                app:layout_constraintStart_toEndOf="@id/lock_icon_module2"
+                app:layout_constraintStart_toEndOf="@id/lock_icon_level2"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -135,7 +135,7 @@
 
 <!--    module 3-->
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/module3"
+        android:id="@+id/level3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -143,7 +143,7 @@
         app:cardCornerRadius="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/module2">
+        app:layout_constraintTop_toBottomOf="@id/level2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -156,7 +156,7 @@
             android:paddingEnd="32dp">
 
             <ImageView
-                android:id="@+id/lock_icon_module3"
+                android:id="@+id/lock_icon_level3"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/baseline_lock_24"
@@ -170,10 +170,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="Module 3"
+                android:text="Level 3"
                 android:textColor="@color/onprimary"
                 android:textSize="10sp"
-                app:layout_constraintStart_toEndOf="@id/lock_icon_module3"
+                app:layout_constraintStart_toEndOf="@id/lock_icon_level3"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -182,7 +182,7 @@
 
     <!--    module 4-->
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/module4"
+        android:id="@+id/level4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -190,7 +190,7 @@
         app:cardCornerRadius="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/module3">
+        app:layout_constraintTop_toBottomOf="@id/level3">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -203,7 +203,7 @@
             android:paddingEnd="32dp">
 
             <ImageView
-                android:id="@+id/lock_icon_module4"
+                android:id="@+id/lock_icon_level4"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/baseline_lock_24"
@@ -217,10 +217,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="Module 4"
+                android:text="Level 4"
                 android:textColor="@color/onprimary"
                 android:textSize="10sp"
-                app:layout_constraintStart_toEndOf="@id/lock_icon_module4"
+                app:layout_constraintStart_toEndOf="@id/lock_icon_level4"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -229,7 +229,7 @@
 
     <!--    module 5-->
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/module5"
+        android:id="@+id/level5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
@@ -237,7 +237,7 @@
         app:cardCornerRadius="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/module4">
+        app:layout_constraintTop_toBottomOf="@id/level4">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
             android:paddingEnd="32dp">
 
             <ImageView
-                android:id="@+id/lock_icon_module5"
+                android:id="@+id/lock_icon_level5"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/baseline_lock_24"
@@ -264,10 +264,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="Module 5"
+                android:text="Level 5"
                 android:textColor="@color/onprimary"
                 android:textSize="10sp"
-                app:layout_constraintStart_toEndOf="@id/lock_icon_module5"
+                app:layout_constraintStart_toEndOf="@id/lock_icon_level5"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
