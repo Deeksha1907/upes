@@ -9,6 +9,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.example.upes.R
 import com.example.upes.databinding.ActivityUserBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 class User : AppCompatActivity() {
 

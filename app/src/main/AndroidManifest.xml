@@ -29,14 +29,14 @@
         </activity>
 
         <activity
-            android:name=".presentation.screens.authentication.signup.signup"
+            android:name=".presentation.screens.authentication.signup.Signup"
             android:exported="true"
             android:theme="@style/Theme.Upes">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                        <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        </intent-filter>-->
         </activity>
         <activity
             android:name=".presentation.screens.authentication.login.Login"
@@ -49,7 +49,7 @@
 
         </activity>
         <activity
-            android:name=".presentation.screens.authentication.otp"
+            android:name=".presentation.screens.authentication.Otp"
             android:exported="true"
             android:theme="@style/Theme.Upes">
             <intent-filter>

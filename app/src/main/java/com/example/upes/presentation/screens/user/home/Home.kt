@@ -5,8 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
 import com.example.upes.R
+import com.example.upes.api.ApiResponse
+import com.example.upes.api.CyberStrikeApi
 import com.example.upes.databinding.FragmentHomeBinding
+import com.example.upes.repository.HomeRepository
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
+import timber.log.Timber
+import javax.inject.Inject
+
 
 
 class Home : Fragment() {
@@ -18,7 +28,33 @@ class Home : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
         // Inflate the layout for this fragment
+        binding.phishing.setOnClickListener{
+//
+//            lifecycleScope.launch {
+//                homeRepository.blog().collect{
+//                    when(it){
+//                        is ApiResponse.Loading -> {
+//
+//                        }
+//                        is ApiResponse.Success -> {
+//                            Timber.d(it.data.toString())
+//                        }
+//                        is ApiResponse.Error -> {
+//                            Toast.makeText(context, "error occured", Toast.LENGTH_SHORT).show()
+//                        }
+//                    }
+//                }
+//            }
+
+        }
+
+
+
         return binding.root
+
+
+
+
     }
 
 }

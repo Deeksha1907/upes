@@ -9,7 +9,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:scrollbars="none"
-    tools:context=".presentation.screens.authentication.signup.signup">
+    tools:context=".presentation.screens.authentication.signup.Signup">
 
 
     <TextView

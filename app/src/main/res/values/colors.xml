@@ -17,6 +17,7 @@
     <color name="onPrimaryVariant">#cccccc</color>
     <color name="onPrimarySecondVariant">#F9E2CF</color>
     <color name="secondary">#1ff1c8</color>
+    <color name="secondaryvariant">#00FF94</color>
     <color name="onsecondary">#f9e2cf</color>
     <color name="blue">#054590</color>
     <color name="graytxt">#7d7d7d</color>
