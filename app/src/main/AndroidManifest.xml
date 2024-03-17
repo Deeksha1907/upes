@@ -47,6 +47,19 @@
         <activity android:name=".presentation.screens.authentication.Assessment_page"
             android:exported="true"
             android:theme="@style/Theme.Upes">
+
+        </activity>
+        <activity android:name=".presentation.screens.authentication.Pmod1_lvl1"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
+        </activity>
+        <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_2"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
+        </activity>
+        <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_3"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -54,6 +67,11 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".presentation.screens.authentication.Pmod3_lvl3_1"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
+
+        </activity>
     </application>
 
 </manifest>

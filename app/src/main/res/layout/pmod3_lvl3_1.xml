@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".presentation.screens.authentication.`Pmod3_lvl3.1`">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/Line"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="48dp"
+            android:background="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phishing"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginEnd="48dp"
+            android:background="@color/background"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/phishing"
+            android:textColor="@color/primary_txt"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/Line"
+            app:layout_constraintTop_toTopOf="@id/Line" />
+        <ImageView
+            android:id="@+id/treasure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/treasure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Line"/>
+        <ImageView
+            android:id="@+id/treasure1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/treasure1"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/treasure"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
