@@ -22,7 +22,10 @@
         <activity
             android:name=".presentation.screens.authentication.login.Login"
             android:exported="true"
-            android:theme="@style/Theme.Upes" />
+            android:theme="@style/Theme.Upes">
+
+
+        </activity>
         <activity android:name=".presentation.screens.authentication.lang"
             android:exported="true"
             android:theme="@style/Theme.Upes">
@@ -31,13 +34,25 @@
         <activity android:name=".presentation.screens.authentication.otp"
             android:exported="true"
             android:theme="@style/Theme.Upes">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
+        <activity android:name=".presentation.screens.authentication.level_sel"
+            android:exported="true"
+            android:theme="@style/Theme.Upes"/>
+
+        <activity android:name=".presentation.screens.authentication.prior_know"
+            android:exported="true"
+            android:theme="@style/Theme.Upes"/>
+        <activity android:name=".presentation.screens.authentication.pmod1_lvl1"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
     </application>
 
 </manifest>

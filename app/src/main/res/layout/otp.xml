@@ -125,6 +125,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="number"
+            android:layout_marginEnd="2dp"
+            android:maxLength="1"
             android:nextFocusDown="@id/no2_container"
             android:textColor="@color/primary"
             android:textSize="16sp" />
@@ -148,7 +150,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="number"
-            android:nextFocusForward="@id/no3_container"
+            android:layout_marginStart="2dp"
+            android:maxLength="1"
+            android:layout_marginEnd="2dp"
+            android:nextFocusDown="@id/no3_container"
             android:textColor="@color/primary"
             android:textSize="16sp" />
 
@@ -170,9 +175,12 @@
             android:id="@+id/no3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxLength="1"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="number"
-            android:nextFocusForward="@id/no4_container"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:nextFocusDown="@id/no4_container"
             android:textColor="@color/primary"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -195,7 +203,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="number"
-            android:nextFocusForward="@id/no5_container"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:maxLength="1"
+            android:nextFocusDown="@id/no5_container"
             android:textColor="@color/primary"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -218,7 +229,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="number"
-            android:nextFocusForward="@id/no6_container"
+            android:layout_marginStart="2dp"
+            android:maxLength="1"
+            android:layout_marginEnd="2dp"
+            android:nextFocusDown="@id/no6_container"
             android:textColor="@color/primary"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -241,16 +255,110 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
             android:inputType="number"
+            android:layout_marginStart="2dp"
+            android:maxLength="1"
             android:textColor="@color/primary"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/otp_fields_container"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/otp_digit_1"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:digits="0-9"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <Space-->
+<!--                android:layout_width="8dp"-->
+<!--                android:layout_height="1dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/otp_digit_2"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:digits="0-9"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <Space-->
+<!--                android:layout_width="8dp"-->
+<!--                android:layout_height="1dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/otp_digit_3"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:digits="0-9"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <Space-->
+<!--                android:layout_width="8dp"-->
+<!--                android:layout_height="1dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/otp_digit_4"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:digits="0-9"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:textSize="16sp" />-->
+
+<!--        </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/resend_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2">
+
+        <TextView
+            android:id="@+id/receive_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/didn_t_receive_code"
+            android:textAlignment="viewEnd"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/view"
+            android:textSize="15.75sp" />
+
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/resend"
+            android:textColor="@color/primary"
+            android:textSize="15.75sp" />
+    </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signup_btn"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="126dp"
         android:backgroundTint="@color/primary"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/next"
@@ -259,7 +367,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+        app:layout_constraintTop_toBottomOf="@+id/resend_txt" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
