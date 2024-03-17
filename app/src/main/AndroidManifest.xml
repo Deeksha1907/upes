@@ -43,15 +43,16 @@
         <activity android:name=".presentation.screens.authentication.prior_know"
             android:exported="true"
             android:theme="@style/Theme.Upes"/>
-        <activity android:name=".presentation.screens.authentication.pmod1_lvl1"
+
+        <activity android:name=".presentation.screens.authentication.Assessment_page"
             android:exported="true"
             android:theme="@style/Theme.Upes">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 

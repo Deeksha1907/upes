@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:fontFamily="@font/montserrat_regular"
-                android:textColor="@color/blue"
+                android:textColor="@color/primary"
                 android:textSize="13sp"/>
         </com.google.android.material.textfield.TextInputLayout>
 

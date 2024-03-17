@@ -8,12 +8,12 @@ import android.widget.AutoCompleteTextView
 import android.widget.Toast
 import com.example.upes.R
 
-class pmod1_lvl1 : AppCompatActivity() {
+class Assessment_page : AppCompatActivity() {
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.pmod1_lvl1)
+        setContentView(R.layout.assessment_page)
 
 
 
