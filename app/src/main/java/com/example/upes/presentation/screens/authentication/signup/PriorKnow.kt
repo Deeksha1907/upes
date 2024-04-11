@@ -45,7 +45,7 @@ class PriorKnow : AppCompatActivity() {
         }
 
         binding.next.setOnClickListener {
-            startActivity(Intent(this,User::class.java))
+            startActivity(Intent(this,Assessment_page::class.java))
         }
 
 

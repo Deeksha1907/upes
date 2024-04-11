@@ -21,11 +21,18 @@
             android:name=".presentation.screens.user.User"
             android:exported="true"
             android:theme="@style/Theme.Upes">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".presentation.screens.user.home.Catagory"
+            android:exported="true"
+            android:theme="@style/Theme.Upes" >
+
         </activity>
 
         <activity
@@ -40,8 +47,8 @@
         </activity>
         <activity
             android:name=".presentation.screens.authentication.login.Login"
-            android:theme="@style/Theme.Upes"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -70,15 +77,42 @@
             android:name=".presentation.screens.authentication.PriorKnow"
             android:exported="true"
             android:theme="@style/Theme.Upes" />
+
         <activity
-            android:name=".presentation.screens.authentication.pmod1_lvl1"
+            android:name=".presentation.screens.authentication.Assessment_page"
             android:exported="true"
             android:theme="@style/Theme.Upes">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.screens.authentication.Pmod1_lvl1"
+            android:exported="true"
+            android:theme="@style/Theme.Upes"></activity>
+        <activity
+            android:name=".presentation.screens.authentication.Pmod3_lvl3_2"
+            android:exported="true"
+            android:theme="@style/Theme.Upes"></activity>
+        <activity
+            android:name=".presentation.screens.authentication.Pmod3_lvl3_3"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
+
+        </activity>
+
+        <activity
+            android:name=".presentation.screens.authentication.Pmod3_lvl3_4"
+            android:exported="true"
+            android:theme="@style/Theme.Upes" />
+
+        <activity
+            android:name=".presentation.screens.authentication.Pmod3_lvl3_1"
+            android:exported="true"
+            android:theme="@style/Theme.Upes" />
+        <activity
+            android:name=".presentation.screens.authentication.Pmod3_lvl3_5"
+            android:exported="true"
+            android:theme="@style/Theme.Upes">
+
         </activity>
 
     </application>

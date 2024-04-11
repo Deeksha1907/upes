@@ -1,5 +1,6 @@
 package com.example.upes.presentation.screens.user.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -29,6 +30,8 @@ class Home : Fragment() {
         binding = FragmentHomeBinding.inflate(layoutInflater)
         // Inflate the layout for this fragment
         binding.phishing.setOnClickListener{
+            startActivity(Intent(context, Catagory::class.java))
+        }
 //
 //            lifecycleScope.launch {
 //                homeRepository.blog().collect{
@@ -46,7 +49,7 @@ class Home : Fragment() {
 //                }
 //            }
 
-        }
+
 
 
 

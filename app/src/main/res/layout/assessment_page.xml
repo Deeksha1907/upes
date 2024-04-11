@@ -9,14 +9,15 @@
     android:paddingStart="32dp"
     android:paddingEnd="32dp"
     android:scrollbars="none"
-    tools:context=".presentation.screens.authentication.login.Login">
+    tools:context=".presentation.screens.authentication.Assessment_page">
 
     <TextView
-        android:id="@+id/hello_txt"
+        android:id="@+id/assessment_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/hi_welcome_back"
+        android:text="@string/assessment"
+        android:textAlignment="center"
         android:textColor="@color/primary"
         android:textSize="28sp"
         android:fontFamily="@font/montserrat_bold"
@@ -25,163 +26,144 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/hello_again_you_ve_been_missed"
+        android:text="@string/let_s_check_your_knowledge"
         android:textColor="@color/onprimary"
         android:textSize="16sp"
+        android:textAlignment="center"
         android:fontFamily="@font/montserrat_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hello_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/assessment_txt" />
 
     <TextView
-        android:id="@+id/emailtxt"
+        android:id="@+id/question1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/email_address"
+        android:layout_marginTop="72dp"
+        android:text="@string/q1_what_is_the_primary_target_of_phishing_attacks"
         android:textColor="@color/primary"
         android:textSize="14.5sp"
         android:fontFamily="@font/montserrat_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+        app:layout_constraintTop_toBottomOf="@+id/text" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_container"
+        android:id="@+id/answer1_container"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:hint="@string/enter_your_email"
-        android:textColorHint="@color/hint"
         app:boxStrokeColor="@color/textfield_colors"
         app:boxStrokeWidth="1dp"
-        app:hintTextColor="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailtxt">
+        app:layout_constraintTop_toBottomOf="@+id/question1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:fontFamily="@font/montserrat_regular"
-            android:textColor="@color/blue"
-            android:textSize="13sp"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/passwordtxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/password"
-        android:textColor="@color/primary"
-        android:textSize="14.5sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_container" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_container"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:hint="@string/enter_your_password"
-        android:textColorHint="@color/hint"
-        app:boxStrokeColor="@color/textfield_colors"
-        app:boxStrokeWidth="1dp"
-        app:hintTextColor="@color/primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordtxt"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/primary">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:fontFamily="@font/montserrat_regular"
             android:textColor="@color/primary"
             android:textSize="13sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/q2_what_is_one_comman_tectic_used_in_phishing_scams_to_deceive_victims"
+        android:textColor="@color/primary"
+        android:textSize="14.5sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer1_container" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/answer2_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/primary"
+            android:textSize="13sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/q3_what_phishing_method_focuses_on_ceos_or_executives_by_mimicing_legitimate_emails"
+        android:textColor="@color/primary"
+        android:textSize="14.5sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer2_container" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/answer3_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:boxStrokeColor="@color/textfield_colors"
+        app:boxStrokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/primary"
+            android:textSize="13sp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <TextView
-        android:id="@+id/forgetpwsd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:text="Forget Password?"
-        android:fontFamily="@font/montserrat_medium"
-        android:textColor="@color/primary"
-        android:textSize="15.5sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_container" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_btn"
+        android:id="@+id/submit"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="72dp"
         android:backgroundTint="@color/primary"
         android:fontFamily="@font/montserrat_bold"
-        android:text="@string/login"
+        android:text="@string/submit"
         android:textColor="@color/black"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgetpwsd" />
+        app:layout_constraintTop_toBottomOf="@+id/answer3_container" />
 
-    <LinearLayout
-        android:id="@+id/lwr_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_btn">
 
-        <TextView
-            android:id="@+id/no_acct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/don_t_have_an_account"
-            android:textAlignment="viewEnd"
-            android:textColor="@color/view"
-            android:textSize="15.75sp" />
 
-        <TextView
-            android:id="@+id/signup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:paddingStart="4dp"
-            android:paddingEnd="4dp"
-            android:text="@string/sign_up"
-            android:textColor="@color/primary"
-            android:textSize="15.75sp"
-            android:textStyle="bold" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

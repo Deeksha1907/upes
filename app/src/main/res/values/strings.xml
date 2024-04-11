@@ -72,4 +72,11 @@
     <string name="phishing">Phishing</string>
     <string name="social_engineering">Social Engineering</string>
     <string name="malware">Malware</string>
+    <string name="assessment">Assessment</string>
+    <string name="let_s_check_your_knowledge">Let\'s check your knowledge!</string>
+    <string name="submit">Submit</string>
+    <string name="q1_what_is_the_primary_target_of_phishing_attack">Q1.What is the primary target of phishing attack?</string>
+    <string name="q1_what_is_the_primary_target_of_phishing_attacks">Q1. What is the primary target of phishing attacks?</string>
+    <string name="q2_what_is_one_comman_tectic_used_in_phishing_scams_to_deceive_victims">Q2. What is one comman tectic used in phishing scams to deceive victims?</string>
+    <string name="q3_what_phishing_method_focuses_on_ceos_or_executives_by_mimicing_legitimate_emails">Q3. What phishing method focuses on CEOs or executives by mimicing legitimate emails?</string>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".presentation.screens.authentication.Pmod1_lvl1">
+    tools:context=".presentation.screens.authentication.Pmod3_lvl3_5">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,44 +36,25 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@id/Line"
             app:layout_constraintTop_toTopOf="@id/Line" />
-
         <ImageView
-            android:id="@+id/level_img"
+            android:id="@+id/treasure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:src="@drawable/levels"
+            android:src="@drawable/treasure"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Line" />
-
+            app:layout_constraintTop_toBottomOf="@+id/Line"/>
         <ImageView
-            android:id="@+id/frame"
+            android:id="@+id/treasure1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/frame"
+            android:src="@drawable/treasure1"
             android:layout_marginTop="8dp"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/level_img" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/next"
-            style="@style/Widget.Material3.Button.Icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/primary"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/next"
-            android:textColor="@color/black"
-            app:cornerRadius="8dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frame" />
+            app:layout_constraintTop_toBottomOf="@+id/treasure"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
