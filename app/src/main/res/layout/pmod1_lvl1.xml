@@ -32,7 +32,7 @@
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:text="@string/phishing"
-            android:textColor="@color/primary_txt"
+            android:textColor="@color/onprimary"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@id/Line"
             app:layout_constraintTop_toTopOf="@id/Line" />

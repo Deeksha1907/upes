@@ -1,12 +1,12 @@
 package com.example.upes.presentation.screens.authentication
+
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.Toast
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.upes.R
+import com.example.upes.presentation.screens.user.User
 
 class Assessment_page : AppCompatActivity() {
 
@@ -15,7 +15,10 @@ class Assessment_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.assessment_page)
 
-
+        val submit = findViewById<Button>(R.id.submit)
+        submit.setOnClickListener {
+            startActivity(Intent(this, User::class.java))
+        }
 
     }
 }

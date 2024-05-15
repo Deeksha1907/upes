@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/let_s_check_your_knowledge"
-        android:textColor="@color/primary_txt"
+        android:textColor="@color/onprimary"
         android:textSize="16sp"
         android:textAlignment="center"
         android:fontFamily="@font/montserrat_medium"
@@ -148,7 +148,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_btn"
+        android:id="@+id/submit"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

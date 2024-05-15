@@ -2,6 +2,6 @@
 <resources>
     <style name="Theme.App" parent="Theme.Upes">
         <item name="colorOnSurface">@color/primary</item>
-        <item name="colorPrimary">@color/primary_txt</item>
+        <item name="colorPrimary">@color/onprimary</item>
     </style>
 </resources>

@@ -9,7 +9,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:scrollbars="none"
-    tools:context=".presentation.screens.authentication.signup.signup">
+    tools:context=".presentation.screens.authentication.signup.PriorKnow">
 
     <TextView
         android:id="@+id/create_account"
@@ -31,7 +31,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="@string/gamify_your_cyber_defense_journey"
-        android:textColor="@color/primary_txt"
+        android:textColor="@color/onprimary"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="@string/do_you_have_any_prior_knowledge"
+        android:text="Press button after selecting topics you know"
         android:textColor="@color/primary"
         android:textSize="14.5sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,13 +93,13 @@
         app:layout_constraintTop_toBottomOf="@+id/layout" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/Yes"
+        android:id="@+id/next"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/hint"
-        android:text="@string/yes_i_have_prior_knowledge"
+        android:text="Next"
         app:cornerRadius="8dp"
         android:textColor="@color/background"
         android:fontFamily="@font/montserrat_bold"
@@ -118,7 +118,7 @@
         android:textSize="14.5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Yes" />
+        app:layout_constraintTop_toBottomOf="@+id/next" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/phishing"

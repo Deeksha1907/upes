@@ -9,7 +9,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:scrollbars="none"
-    tools:context=".presentation.screens.authentication.signup.signup">
+    tools:context=".presentation.screens.authentication.signup.Signup">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/gamify_your_cyber_defense_journey"
-            android:textColor="@color/primary_txt"
+            android:textColor="@color/onprimary"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -355,7 +355,7 @@
             app:passwordToggleTint="@color/primary">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/confirm_password"
+                android:id="@+id/confirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_regular"
